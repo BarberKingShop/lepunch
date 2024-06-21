@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE PUNCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Bebas+Neue&family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Jersey+10+Charted&family=Madimi+One&family=Poppins:wght@700&family=Quicksand:wght@300..700&family=Sixtyfour&family=Space+Grotesk:wght@300..700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+    <script src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html{
+            overflow: hidden;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }body{
+            background-color: #000000;
+        } a{
+            color: #F2B705;
+             text-decoration:underline; 
+             font-weight: 400;
+        }a:hover{
+            color:#F2B705; 
+             text-decoration:underline; 
+             font-weight: 400;
+            
+        }.containerr{
+            width: 112px;
+            height: 112px;
+            position: relative;
+        }
+
+        .box1, .box2, .box3{
+            border : 16px solid #F24405;
+            box-sizing : border-box;
+            position : absolute;
+            display : block;
+        }
+        
+        .box1{
+            width: 112px;
+            height: 48px;
+            margin-top: 64px;
+            margin-left: 0px;
+            animation: anime1 4s 0s forwards ease-in-out infinite;
+        }
+        
+        .box2{
+            width: 48px;
+            height: 48px;
+            margin-top: 0px;
+            margin-left: 0px;
+            animation: anime2 4s 0s forwards ease-in-out infinite;
+        }
+        
+        .box3{
+            width: 48px;
+            height: 48px;
+            margin-top: 0px;
+            margin-left: 64px;
+            animation: anime3 4s 0s forwards ease-in-out infinite;
+        }
+        
+        
+        
+        @keyframes anime1 {
+            0%{
+                width: 112px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }12.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }25%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }37.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }50%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }62.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 0px;
+            }75%{
+                width: 48px;
+                height: 112px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }87.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }100%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+        }
+
+        @keyframes anime2{
+            0%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left :0px;
+            }12.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left :0px;
+            }25%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }37.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 0px;
+            }50%{
+                width: 112px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left :0px;
+            }62.5%{
+                width :48px;
+                height :48px;
+                margin-top :0px;
+                margin-left: 64px;
+            }
+            75%{
+
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }
+            87.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }100%{
+
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }
+        }
+
+        @keyframes anime3{
+            0%{
+                width: 48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }12.5%{
+                width :48px;
+                height: 48px;
+                margin-top: 0px;
+                margin-left :64px;
+            }25%{
+                width: 48px;
+                height: 112px;
+                margin-top: 0px;
+                margin-left: 64px;
+            }37.5%{
+                width :48px;
+                height :48px;
+                margin-top :64px;
+                margin-left :64px;
+            }50%{
+                width :48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+            }62.5%{
+
+                width :48px;
+                height: 48px;
+                margin-top :64px;
+                margin-left :64px;
+            }75%{
+                width: 48px;
+                height :48px;
+                margin-top :64px;
+                margin-left :64px;
+            }
+            87.5%{
+                width: 48px;
+                height: 48px;
+                margin-top: 64px;
+                margin-left: 64px;
+            }100%{
+                width: 112px;
+                height: 48px;
+                margin-top :64px;
+                margin-left :0px;
+            }
+        }
+        #nav_bar{
+            display: flex; justify-content: space-evenly; align-items: center; height: 80px; 
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(15px);
+            background-color: #00000085;
+        }.img_row{
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;
+            & > div{
+                width: 30vw; 
+                height: 30vw; 
+                background-size:cover; 
+                background-position:center; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div style="position: absolute; top:0; width: 100vw; height: 100vh; backdrop-filter: blur(15px); z-index: 3; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.297);" id="loader">
+        <div class="containerr">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+    <div style="height: fit-content; width: 100vw; background-color: #0D0D0D; min-height: 2000px ; position: relative;">
+        <!-- <img src="logo/logo.webp" alt="" srcset="" style="width: 20vw; position: absolute; top:5vh; left: 5vw;">
+        <img src="logo/halal.webp" alt="" srcset="" style="width: 20vw; position: absolute; top:5vh; right: 5vw;"> -->
+        <div style="background-image: url('Barbecue-1.jpeg') ; width: 100%; height: 250px; background-size: cover; background-position: center;">
+            <div style="width: 100%; height: 100%; background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0.99) 0%, rgba(0,0,0,0.938813025210084) 12%, rgba(0,0,0,0.8715861344537815) 24%, rgba(0,0,0,0.5886729691876751) 45%, rgba(0,0,0,0) 69%); display: flex; justify-content: center; align-items: end;">
+                <img src="logo/LE PUNCH.webp" alt="" srcset="" style="width: 70vw;">
+            </div>
+        </div>
+
+        <div id="nav_bar">
+            <div>
+                <div style="width: 48vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F24405; border-radius: 5px; text-align: center; text-transform: uppercase; letter-spacing: 2px; display: flex; justify-content: space-evenly; align-items: center;">Contactez-nous </div>
+            </div>
+            <div>
+                <select name="" id="" style="width: 36vw; height: 36px; background-color: #0D0D0D; color: white; border: 1px solid #F2B705; box-shadow: 0 0 10px #F29F05; text-align: center;">
+                    <option selected hidden value="">Catégories</option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; width: 100vw; height: 100px;">
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; height: 50px; width: 70vw; text-align: center; font-family: 'Playwrite IS';">Les Nouveaux Bowls</h1>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; height: fit-content; width: 100vw;" class="img_row"> 
+            <div style="background-image: url('bowls/bowls.webp');"></div>
+            <div style="background-image: url('bowls/bowls\ 2.webp');"></div>
+            <div style="background-image: url('bowls/bowls\ 3.webp');"></div>
+        </div>
+        <div>
+            <h3 style="text-transform: uppercase; color: white; font-size: 16px; width: 100%; text-align: center;">STEAK - NUGGET - TENDERS - BACON - SAUCE FROMAGéRE - sauce cheddar</h3>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding:0 5vw; margin-top: 2rem;">
+            <div style="display: flex; flex-direction: column; width: 20vw; justify-content: center; align-items: center;">
+                <div style="background-image: url('box/cheddar\ frites.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Cheddar Frites</p>
+            </div>
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS';">Box</h1>
+            <div style="display: flex; flex-direction: column; width: 20vw; justify-content: center; align-items: center;">
+                <div style="background-image: url('box/cheddar\ oignon.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Cheddar Oignon</p>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; margin-bottom: 2rem;">
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/cheddar\ bacon.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Cheddar Bacon</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/nuggets\ frites.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Nuggets Frites</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/6.00€.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Kebab Frites</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/tenders\ frites.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Tenders Frites</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('box/kebab\ \(1\).webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Kebab</p>
+            </div>
+        </div>
+
+        <!-- burguers -->
+        <div style="display: flex; justify-content: center; align-items: center; padding:0 5vw; margin-top: 2rem;  margin-bottom: 2rem; width: 100vw;">
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS';">Burgers</h1>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw;">
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/cheese-burger.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Cheese Burger</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/ROYAL\ BURGER.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Royal Burger<p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/double-cheese.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Double Cheese</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/TRIPLE\ CHEESE.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Triple Cheese</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw; margin-bottom: 2rem;">
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/CHICKEN-BURGER.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Chicken Burger</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/fish-burgeur.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Fish Burger</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/PUNCH\ BURGER.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Punch Burger<p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/extra-cheese.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Extra Cheese</p>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 15vw; justify-content: flex-start; align-items: center;">
+                <div style="background-image: url('burger/SUPER\ PUNCH.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
+                <p style="color: white; text-align: center;">Super Punch</p>
+            </div>
+        </div>
+
+
+        
+    </div>
+    
+    
+    <div style="background-color: 0D0D0D; height: 50px; width: 100vw; color: white; display: flex; justify-content: center; align-items: center; border-top: 1px solid white;">
+        <div>By <a href="#" class="link_a">Joezv</a> at <a href="https://joevev.github.io/mziouka-poly-service.github.io/" class="link_a">MzPolyservices</a> | ©2024</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+
+
+
+
+
+           
+            $( window ).on( "load", function() {
+                setTimeout(function() { 
+                    $('#loader').fadeOut();
+                    $('html').css('overflow','scroll');
+                }, 2000);
+            });
+            
+        })
+       
+    </script>
+</body>
+</html>
