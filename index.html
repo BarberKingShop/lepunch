@@ -228,7 +228,6 @@
             top: 0;
             backdrop-filter: blur(15px);
             background-color: #00000085;
-            border-bottom: 2px solid #f29f05;
         }.img_row{
             display: flex;
             justify-content: space-evenly; 
@@ -275,7 +274,7 @@
             </div>
         </div>
         <div style="display: flex; justify-content: space-evenly; align-items: center; width: 100vw; height: 100px;">
-            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; height: 50px; width: 70vw; text-align: center; font-family: 'Playwrite IS';">Les Nouveaux Bowls</h1>
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; min-height: 50px; width: 70vw; text-align: center; font-family: 'Playwrite IS';">Les Nouveaux Bowls</h1>
         </div>
         <div style="display: flex; justify-content: space-evenly; align-items: center; height: fit-content; width: 100vw;" class="img_row"> 
             <div style="background-image: url('bowls/bowls.webp');"></div>
@@ -291,7 +290,7 @@
                 <div style="background-image: url('box/cheddar\ frites.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
                 <p style="color: white; text-align: center;">Cheddar Frites</p>
             </div>
-            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS';">Box</h1>
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; min-height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS';">Box</h1>
             <div style="display: flex; flex-direction: column; width: 20vw; justify-content: center; align-items: center;">
                 <div style="background-image: url('box/cheddar\ oignon.webp'); background-position: center; background-size: cover; width: 15vw; height: 15vw;"></div>
                 <p style="color: white; text-align: center;">Cheddar Oignon</p>
@@ -323,7 +322,7 @@
 
         <!-- burguers -->
         <div style="display: flex; justify-content: center; align-items: center; padding:0 5vw; margin-top: 2rem;  margin-bottom: 2rem; width: 100vw;">
-            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS';">Burgers</h1>
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; min-height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS';">Burgers</h1>
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: start; padding: 0 5vw;">
@@ -369,13 +368,13 @@
 
         <!-- Tacos -->
         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
-            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS'; margin-bottom: 2rem;">Tacos</h1>
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; min-height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS'; margin-bottom: 2rem;">Tacos</h1>
 
-            <div style="display: flex; justify-content: space-between; width:100%;">
-                <div style="background-image: url('tacos/tacos.webp'); background-size: cover; background-position: center; width: 40%;">
+            <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+                <div style="background-image: url('tacos/tacos.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
 
                 </div>
-                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px;">
+                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px 0;">
                     <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
                         <p><b>M</b> 1 Viande</p> 
                         <p>8€</p>
@@ -390,18 +389,20 @@
                     </div>
                 </div>
             </div>
+            
         </div>
+        
 
          <!-- Tacos Gratiné Au Choix -->
          <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
-            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; height: 50px; width: 80vw; text-align: center; font-family: 'Playwrite IS'; margin-bottom: 2rem;">Tacos Gratiné Au Choix</h1>
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; min-height: 50px; width: 80vw; text-align: center; font-family: 'Playwrite IS'; margin-bottom: 2rem;">Tacos Gratiné Au Choix</h1>
 
-            <div style="display: flex; justify-content: space-between; width:100%;">
+            <div style="display: flex; justify-content: space-between; width:100%; align-items: center;">
                 <div style="width: 40%; height: 100%; display: flex; justify-content: space-between;">
                     <div style="width: 45%; height: 100%;">
                         <div>
                             <div style="background-image: url('tacos/LARDONS.webp'); background-size: cover; background-position: center; width: 100%; height: 50px;"></div>
-                            <p style="color: white;">Lardons</p>
+                            <p style="color: white; text-align: center;">Lardons</p>
                         </div>
                         <div>
                             <div style="background-image: url('tacos/CHEVRE\ MIEL.webp'); background-size: cover; background-position: center; width: 100%; height: 50px;"></div>
@@ -411,16 +412,16 @@
                     <div style="width: 45%; height: 100%;">
                         <div>
                             <div style="background-image: url('tacos/BOURSIN.webp'); background-size: cover; background-position: center; width: 100%; height: 50px;"></div>
-                            <p style="color: white;">Boursin</p>
+                            <p style="color: white; text-align: center;">Boursin</p>
                         </div>
                         <div>
                             <div style="background-image: url('tacos/RACLETTE.webp'); background-size: cover; background-position: center; width: 100%; height: 50px;"></div>
-                            <p style="color: white;">Raclette</p>
+                            <p style="color: white; text-align: center;">Raclette</p>
                         </div>
                     </div>
                 </div>
                 
-                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;">
+                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; height: fit-content; padding: 10px 0; ">
                     <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
                         <p><b>M</b> 1 Viande</p> 
                         <p>10€</p>
@@ -435,7 +436,68 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <h3 style="text-transform: uppercase; color: white; font-size: 16px; width: 100%; text-align: center; margin-top: 1rem;">
+                    <span style="color: #f27d01;">Les Viandes:</span> Poulet, Kefta, STEAK, Kebab, Cordon Bleu, NUGGETs, TENDERS, SAUCE FROMAGéRE</h3>
+            </div>
         </div>
+
+         <!-- Panini -->
+         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; min-height: 50px; width: 40vw; text-align: center; font-family: 'Playwrite IS'; margin-bottom: 2rem;">Panini</h1>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+                <div style="background-image: url('images/panini.webp'); background-size: cover; background-position: center; width: 40%; height: 120px;">
+
+                </div>
+                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px 0;">
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>Au choix</p> 
+                        <p>5€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>Avec frites</p> 
+                        <p>6€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>En formule</p> 
+                        <p>7€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- kids -->
+         <div style="width: 100vw; padding:0 5vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2rem;">
+            <h1 style="margin: 0; background-color: #f27d01;  color: white;   padding: 10px 25px; border: #F2B705; border-radius: 25px; font-size: 20px; min-height: 50px; width: 60vw; text-align: center; font-family: 'Playwrite IS'; margin-bottom: 2rem;">Menu Kids</h1>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+                <div style="width: 45%; height: 100%;">
+                    <div style="background-image: url('kids/nugget\ kids.webp'); background-size: cover; background-position: center; width: 50%; height: 60px;">
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 50%; color: white; display: flex; justify-content: center; align-items: center;"><h1>OU</h1></div>
+                        <div style="background-image: url('kids/burger\ kids.webp'); background-size: cover; background-position: center; width: 50%; height: 60px;">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div style="width: 55%; border-top: 2px solid #F29F05; border-bottom: 2px solid #F29F05; border-radius: 15px; padding: 10px;">
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>4 Nugette et capri-sun</p> 
+                        <p>6€</p>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; color:white;">
+                        <p>Cheese frites et capri-sun</p> 
+                        <p>6€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         
     </div>
     
